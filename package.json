@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-docker-app",
+  "version": "1.0.0",
+  "description": "A minimal Node.js web app containerized with Docker and published to Docker Hub",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "nodejs",
+    "docker",
+    "dockerhub"
+  ],
+  "author": "ibraheembello",
+  "license": "MIT"
+}
