@@ -24,6 +24,10 @@ nodejs-docker-app/
 └── README.md
 ```
 
+## Live image
+
+Published on Docker Hub: [`ibraheembello/nodejs-app:1.0`](https://hub.docker.com/r/ibraheembello/nodejs-app)
+
 ## Run locally (without Docker)
 
 ```bash
@@ -36,21 +40,21 @@ npm start     # serves on http://localhost:3000
 Build the image (tagged with the Docker Hub username):
 
 ```bash
-docker build -t DOCKERHUB_USERNAME/nodejs-app:1.0 .
+docker build -t ibraheembello/nodejs-app:1.0 .
 ```
 
 Push it to Docker Hub:
 
 ```bash
 docker login
-docker push DOCKERHUB_USERNAME/nodejs-app:1.0
+docker push ibraheembello/nodejs-app:1.0
 ```
 
 Pull and run it anywhere:
 
 ```bash
-docker pull DOCKERHUB_USERNAME/nodejs-app:1.0
-docker run -d -p 3000:3000 DOCKERHUB_USERNAME/nodejs-app:1.0
+docker pull ibraheembello/nodejs-app:1.0
+docker run -d -p 3000:3000 ibraheembello/nodejs-app:1.0
 docker ps
 ```
 
@@ -61,7 +65,7 @@ Then open http://localhost:3000 (or `http://<server-ip>:3000`).
 ### 1. Docker image build
 
 ```bash
-docker build -t DOCKERHUB_USERNAME/nodejs-app:1.0 .
+docker build -t ibraheembello/nodejs-app:1.0 .
 ```
 
 ![Docker build](docs/build.png)
